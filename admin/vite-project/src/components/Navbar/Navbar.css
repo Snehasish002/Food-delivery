@@ -1,0 +1,22 @@
+.navbar {
+    background: rgb(50, 50, 50);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+
+.navbar h2 {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.navbar .logo {
+    width: max(10%, 80px);
+}
+
+.navbar .profile {
+    width: 40px;
+
+}
+

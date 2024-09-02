@@ -1,0 +1,186 @@
+.navbar{
+    
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    z-index: 1; 
+    backdrop-filter: blur(10px); 
+    background: rgba(92, 92, 92, 0.173);
+    width: 100%; 
+    left: 0; 
+    right: 0; 
+    
+}
+
+.navbar .logo {
+    width: 175px;
+}
+
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 45px;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.navbar button {
+    background: transparent;
+    font-size: 16px;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.navbar button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* .navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid green;
+} */
+
+.navbar .active {
+    background: green;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.navbar-search-icon  {
+    position: relative;
+}
+
+.fa-solid {
+    font-size: 20px;
+    color: white;
+}
+.navbar-search-icon .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: green;
+    border-radius: 5px;
+    top: -10px;
+    right: -10px;
+}
+
+.navbar-profile {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.nav-profile-dropdown {
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+
+}
+
+.navbar-profile:hover  .nav-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(0, 122, 10, 0.497);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 12px 25px;
+    color: rgb(255, 255, 255);
+    list-style: none;
+    border-radius: 5px;
+}
+
+.nav-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nav-profile-dropdown i {
+    width: 20px;
+}
+
+
+@media (max-width: 1050px) {
+    .navbar .logo {
+        width: 140px;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 30px;
+        font-size: 17px;
+    }
+
+    .navbar-right img {
+        width: 22px;
+    }
+
+    .navbar-right button {
+        padding: 8px 25px;
+    }
+
+
+}
+
+@media (max-width: 900px) {
+    .navbar .logo {
+        width: 120px;
+    }
+
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+        
+    }
+
+    .navbar-right img {
+        width: 20px;
+    }
+
+    .navbar-right button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+
+
+}
+
+@media (max-width: 750px) {
+    
+
+    .navbar-menu {
+        display: none;
+    }
+
+   
+
+}
